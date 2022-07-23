@@ -28,7 +28,10 @@ public class Lexer {
   }
 
   private boolean String tag(String un) {
-    return 
+    if(is_tag(un)) {
+      return 
+    } 
+    throw new LexingException("Tag: " + un + "\nIs not a tag!");
   }
 
   private Map<String, byte[]> init(String obj) throws LexingException {
@@ -39,7 +42,7 @@ public class Lexer {
     while(st.hasMoreTokens()) {
       String curr = st.nextToken();
       if(is_tag(curr)) {
-
+        
       }
     }
     return null;
