@@ -9,7 +9,7 @@ This repository contains the
 source code for Halcyon
 Malimbica Resource API.
 
-Copyright(C)Jack Meng 2023
+Copyright(C)Jack Meng 2022
 
 Licensed under the following:
 
