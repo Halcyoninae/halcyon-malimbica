@@ -1,6 +1,6 @@
 ====== Halcyon Malimbica ======
 
-A resource API to be used with
+A web API to be used with
 Halcyon.
 
 -------------------------------
@@ -34,6 +34,9 @@ to facilitate the communication
 between the web API and
 parsing that data to the end
 client.
+
+This also acts as the website
+hub for the program.
 
 -------------------------------
 
