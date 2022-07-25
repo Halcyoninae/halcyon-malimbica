@@ -1,6 +1,7 @@
 package com.jackmeng.halcyon.malimbica;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
@@ -11,6 +12,35 @@ public class Lexer {
   public interface LexerDictionary {
     final String TAG_CHAR = "__";
     final String END_TAG_CHAR = "!_";
+  }
+
+  public static class StupidToken {
+    private byte[] container;
+    private StupidMethod armor;
+    
+    public enum StupidMethod {
+      NUMERICAL,CHARABLE,BIN,ENC_SHA_256,ENC_SHIFT_64;
+    }
+
+    public StupidToken(StupidMethod method, byte ... container) {
+      this.container = container;
+      this.armor = method;
+    }
+
+    public Object[] armor(StupidMethod armor_override) {
+      if(armor_override != null) {
+        System.out.println("> STUPID_LEXER: Overriding the armor.\n\t-Overridden by third-party means");
+      }
+      if(armor_override == StupidMethod.CHARABLE) {
+        List<Character> char_table = new ArrayList<>();
+        StringBuilder bd = new StringBuilder();
+        for(byte b : container) {
+          bd.append(b);
+        }
+      }
+
+    }
+    
   }
 
   public Lexer(String objects) throws LexingException {
