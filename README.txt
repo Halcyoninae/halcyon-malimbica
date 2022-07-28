@@ -35,6 +35,10 @@ between the web API and
 parsing that data to the end
 client.
 
+If heavy resource pushes are
+required, a different service
+will be considered.
+
 This also acts as the website
 hub for the program.
 
