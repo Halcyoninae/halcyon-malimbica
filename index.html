@@ -15,18 +15,31 @@
       align-items: center;
       justify-content: center;
     }
+
     .bg_rect {
       border-radius: 52px;
       background-color: #999e57;
       width: 50%;
-      height:80ex;
-      position:absolute;
-      top: 50%;
-      left: 25%;
-      margin-bottom: 30%;
-      align-items: center;
-      box-shadow: 8px 1px #787c44;
+      height: 35%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-top: 4.20%;
+      box-shadow: 0 9px #61643a;
     }
+
+    .bg_rect:hover {
+      background-color: #8d914e;
+    }
+
+    .bg_rect:active {
+      background-color: #8d914f;
+      box-shadow: 0 6px #4e502f;
+      transform: translateY(3px);
+    }
+
     .header_text {
       color: rgb(220, 228, 225);
       font-size: 500%;
@@ -34,19 +47,26 @@
     }
     .sub_header_text {
       color: rgb(220, 228, 225);
-      font-size: 32px;
+      font-size: 180%;
       text-align: center;
+    }
+
+    .general_text,
+    .header_text,
+    .sub_header_text {
+      white-space: hidden;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   </style>
   <body>
+    <a href="https://github.com/Halcyoninae/halcyon"></a>
     <div class="content_alignment_shapes">
       <div class="bg_rect">
         <p class="header_text">
           <strong>Halcyon</strong>
         </p>
-        <p class="sub_header_text">
-          Made by Jack Meng (exoad)
-        </p>
+        <p class="sub_header_text">Made by Jack Meng (exoad)</p>
       </div>
     </div>
   </body>
