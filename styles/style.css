@@ -3,35 +3,38 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho);
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
-* {
-  box-sizing: border-box;
+html {
+  min-height: 100%;
+  height: 100%;
 }
 
 body {
   height: calc(100vh - 8em);
-  background-color: #21252B;
+  background-color: rgba(33,
+      37,
+      43, 0.8);
   color: #89EDA4;
   align-content: center;
   align-items: center;
   display: flex;
-  margin:0;
+  margin: 0;
   align-self: center;
   font-family: 'Rancho';
-}
-
-.body-bg {
-  background-image: url("assets/img/my_background.jpg");
-  filter: blur(16px);
-  -webkit-filter: blur(16px);
-  background-size: cover;
-  height: 100%;
+  background-image: url("../assets/img/my_bg_blurred.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
   background-position: center;
 }
+
 
 .master_ {
   width: 100%;
   height: 100%;
+  background-color: rgba(33,
+      37,
+      43, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
