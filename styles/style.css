@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  text-align: center;
   height: calc(100vh - 8em);
   background-color: rgba(33,
       37,
@@ -51,8 +52,7 @@ body {
   margin: 0 auto;
   letter-spacing: 4px;
   animation:
-    blinker 0.45s steps(23),
-    blinker-caret 0.75s steps(20) infinite;
+    blinker 0.45s steps(23);
 }
 
 .key_animation_sub h2 {
@@ -67,9 +67,8 @@ body {
   opacity: 0;
   animation:
     0.8s show_element_animation forwards,
-    blinker 0.45s steps(45),
-    blinker-caret 0.75s steps(20) infinite;
-  animation-delay: 550ms;
+    blinker 0.45s steps(45);
+  animation-delay: 450ms;
 }
 
 @keyframes show_element_animation {
