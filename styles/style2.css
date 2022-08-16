@@ -1,0 +1,20 @@
+.link_controls {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link_text {
+  border-radius: 5px;
+  color: #89EDA4;
+  white-space: nowrap;
+  font-size: 1.3em;
+}
+
+.link_text:hover {
+  border-radius: 5px;
+  color: #71be86;
+}
