@@ -3,7 +3,7 @@
 A web API to be used with
 Halcyon.
 
--------------------------------
+===============================
 
 This repository contains the
 source code for Halcyon
