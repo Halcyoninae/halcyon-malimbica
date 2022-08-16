@@ -1,3 +1,5 @@
+/*link stuffs (idek)*/
+
 .link_controls {
   align-content: center;
   align-items: center;
@@ -10,11 +12,25 @@
 .link_text {
   border-radius: 5px;
   color: #89EDA4;
-  white-space: nowrap;
   font-size: 1.3em;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .link_text:hover {
   border-radius: 5px;
-  color: #71be86;
+  background-color: #89EDA4;
+  color: #21252B;
+  transition: all 0.6s;
+}
+
+.link_tilde_ {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.link_tilde_:hover {
+  color: #5F657D;
 }

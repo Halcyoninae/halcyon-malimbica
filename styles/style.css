@@ -3,9 +3,8 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho);
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
-html {
-  overflow: hidden;
-  min-height: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -15,8 +14,19 @@ body {
   align-content: center;
   align-items: center;
   display: flex;
+  margin:0;
   align-self: center;
   font-family: 'Rancho';
+}
+
+.body-bg {
+  background-image: url("assets/img/my_background.jpg");
+  filter: blur(16px);
+  -webkit-filter: blur(16px);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .master_ {
@@ -32,8 +42,9 @@ body {
 
 .key_animation h1 {
   overflow: hidden;
-  border-right: 2.5px solid #5F657D;
-  white-space:initial;
+  border-right: 2.5px solid transparent;
+  white-space: initial;
+  cursor: pointer;
   margin: 0 auto;
   letter-spacing: 4px;
   animation:
@@ -44,9 +55,11 @@ body {
 .key_animation_sub h2 {
   color: #FFFF;
   overflow: hidden;
-  border-right: 1.5px solid #5F657D;
+  border-right: 1.5px solid transparent;
   white-space: nowrap;
-  margin: 1 auto; /*override*/
+  cursor: pointer;
+  margin: 1 auto;
+  /*override*/
   letter-spacing: 2.5px;
   opacity: 0;
   animation:
@@ -79,10 +92,6 @@ body {
   to {
     border-color: transparent
   }
-
-  50% {
-    border-color: #5F657D
-  }
 }
 
 a {
@@ -100,5 +109,5 @@ a:visited {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 27px;
 }
