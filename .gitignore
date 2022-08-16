@@ -25,3 +25,5 @@ hs_err_pid*
 
 # other stuffs in my workspace
 .vscode
+*.iml
+.idea
