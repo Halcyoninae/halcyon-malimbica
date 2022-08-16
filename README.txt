@@ -13,7 +13,7 @@ Copyright(C)Jack Meng 2022
 
 Licensed under the following:
 
-1. Source Code: BSD-3.0
+1. Source Code: BSD-3.0 or BSL
 
 -------------------------------
 
