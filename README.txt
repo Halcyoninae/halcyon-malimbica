@@ -39,9 +39,6 @@ If heavy resource pushes are
 required, a different service
 will be considered.
 
-This also acts as the website
-hub for the program.
-
 -------------------------------
 
 [!] MISC
